@@ -57,7 +57,7 @@ function submitt()
 		  if(countselect!=0)
 		  {
 		  $('#err_msg').html("<font color='green'><img src='loader.gif' border='0' alt='Loading...' /></font>");
-			   $.post("ajax-generator.php","length="+$len+"&lowl="+$lcl+"&upl="+$ucl+"&nol="+$nl+"&syml="+$sl,function(resp){	   
+			   $.post("pass-generator.php","length="+$len+"&lowl="+$lcl+"&upl="+$ucl+"&nol="+$nl+"&syml="+$sl,function(resp){	   
 					$('#err_msg').html("");
 					$('#texarea').slideDown('slow');	
 					$('#texarea').html(resp);          
